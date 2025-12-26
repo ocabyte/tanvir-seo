@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvir Hossain | Search Strategist & SEO Consultant</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        'off-white': '#FDFCFB', 
+                        'charcoal': '#1A1A1A',
+                        'accent-navy': '#2563EB',
+                        'soft-gold': '#C5A059'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFCFB;
+            color: #1A1A1A;
+        }
+        
+        /* Smooth Fade-in Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Portrait Container Effects */
+        .portrait-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        
+        .portrait-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid rgba(0,0,0,0.05);
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar for Premium Feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FDFCFB; }
+        ::-webkit-scrollbar-thumb { background: #E5E7EB; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D1D5DB; }
+    </style>
+</head>
+<body class="selection:bg-accent-navy selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center mix-blend-difference text-white">
+        <div class="text-xl font-serif font-bold tracking-tight">Tanvir Hossain</div>
+        <div class="hidden md:flex gap-12 text-xs uppercase tracking-[0.2em] font-semibold">
+            <a href="#philosophy" class="hover:opacity-60 transition-opacity">Philosophy</a>
+            <a href="#journey" class="hover:opacity-60 transition-opacity">The Journey</a>
+            <a href="#wins" class="hover:opacity-60 transition-opacity">Wins</a>
+            <a href="#contact" class="hover:opacity-60 transition-opacity underline underline-offset-4">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col justify-center px-8 lg:px-20 pt-32 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left: Text Content -->
+            <div class="lg:col-span-7 z-10">
+                <p class="reveal text-accent-navy font-semibold tracking-[0.3em] uppercase text-xs mb-6">Based in Bangladesh — Global Impact</p>
+                <h1 class="reveal font-serif text-6xl md:text-8xl lg:text-[7vw] leading-[1.1] font-black mb-8">
+                    Building <span class="italic font-normal text-gray-400">Authority</span> in a Noise-Filled World.
+                </h1>
+                <p class="reveal text-xl md:text-2xl font-light text-gray-600 max-w-xl leading-relaxed mb-10">
+                    I don’t chase algorithms. I build relevance, relevance builds trust, and trust builds industry leaders.
+                </p>
+                <div class="reveal flex gap-8 items-center">
+                    <a href="#contact" class="bg-charcoal text-white px-10 py-5 rounded-full hover:bg-accent-navy transition-all duration-500 transform hover:-translate-y-1">
+                        Book Strategy Call
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Image Content -->
+            <div class="lg:col-span-5 relative">
+                <div class="reveal portrait-wrapper aspect-[4/5] bg-gray-200 shadow-2xl">
+                    <!-- Professional Sample Image Placeholders -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop" 
+                         alt="Tanvir Hossain" 
+                         class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out"
+                         onerror="this.src='https://via.placeholder.com/800x1000?text=Profile+Photo'">
+                </div>
+                <!-- Decorative element -->
+                <div class="absolute -bottom-6 -left-6 w-32 h-32 border-l-2 border-b-2 border-accent-navy reveal" style="transition-delay: 0.5s;"></div>
+            </div>
+        </div>
+        
+        <!-- Bottom Floating Indicators -->
+        <div class="absolute bottom-10 left-8 hidden lg:block reveal" style="transition-delay: 1.2s;">
+            <div class="flex flex-col gap-4 text-[10px] font-bold tracking-widest text-gray-400 uppercase vertical-text">
+                <span class="rotate-90 origin-left ml-2">Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="py-32 bg-charcoal text-off-white px-8 lg:px-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div class="reveal">
+                <h2 class="font-serif text-5xl md:text-6xl font-bold mb-12 italic">The SEO <br>Philosophy.</h2>
+                <div class="w-24 h-1 bg-accent-navy mb-12"></div>
+            </div>
+            <div class="reveal space-y-8 text-xl font-light leading-relaxed text-gray-300">
+                <p>
+                    Most SEOs focus on the machine. I focus on the human. If a search engine is a librarian, your website shouldn't just be a book—it should be the <span class="text-white font-medium">unquestioned authority</span> in its niche.
+                </p>
+                <p>
+                    I specialize in technical precision and content psychology. By the time we're finished, Google doesn't just rank you because of keywords; it ranks you because you are the <span class="italic text-accent-navy">only</span> logical answer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey -->
+    <section id="journey" class="py-32 px-8 lg:px-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="reveal font-serif text-5xl font-bold mb-20 text-center">8 Years of Growth.</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-gray-200">
+                <div class="reveal border-r border-gray-200 p-10 group hover:bg-white transition-colors">
+                    <span class="text-accent-navy font-bold text-xs tracking-widest uppercase">Phase 01</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">Local Foundations</h3>
+                    <p class="text-gray-600 font-light">Learning the core mechanics of intent by scaling regional businesses in South Asia.</p>
+                </div>
+                <div class="reveal border-r border-gray-200 p-10 group hover:bg-white transition-colors" style="transition-delay: 0.2s;">
+                    <span class="text-accent-navy font-bold text-xs tracking-widest uppercase">Phase 02</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">SaaS & Scale</h3>
+                    <p class="text-gray-600 font-light">Navigating high-competition markets and enterprise architectures for Silicon Valley startups.</p>
+                </div>
+                <div class="reveal p-10 group hover:bg-white transition-colors" style="transition-delay: 0.4s;">
+                    <span class="text-accent-navy font-bold text-xs tracking-widest uppercase">Phase 03</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">Global Strategy</h3>
+                    <p class="text-gray-600 font-light">Architecting international growth frameworks for industry leaders across three continents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Wins -->
+    <section id="wins" class="py-32 bg-gray-50 px-8 lg:px-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <h2 class="reveal font-serif text-5xl font-bold">Proven Outcomes.</h2>
+                <p class="reveal text-gray-500 font-medium">Selected Case Studies</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="reveal bg-white p-12 shadow-sm border border-gray-100 transform transition-transform hover:-rotate-1">
+                    <p class="text-accent-navy font-bold mb-4">SaaS Transformation</p>
+                    <h3 class="text-3xl font-serif font-bold mb-6 italic">“From 15k to 120k Monthly Visitors in 11 months.”</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">By restructuring the technical hierarchy and deploying a cluster-based content strategy, we bypassed legacy competitors.</p>
+                </div>
+                <div class="reveal bg-white p-12 shadow-sm border border-gray-100 transform transition-transform hover:rotate-1" style="transition-delay: 0.2s;">
+                    <p class="text-accent-navy font-bold mb-4">E-commerce Dominance</p>
+                    <h3 class="text-3xl font-serif font-bold mb-6 italic">“210% Increase in Organic Transaction Value.”</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">Optimization focused on the purchase intent funnel, turning high-volume informative traffic into high-intent buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-40 px-8 lg:px-20 bg-accent-navy text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="reveal font-serif text-4xl md:text-5xl lg:text-6xl font-light italic leading-tight">
+                “Tanvir doesn’t just show you graphs; he shows you the path to being the market leader. He is the strategist every CMO needs.”
+            </h2>
+            <div class="reveal w-20 h-px bg-white/30 mx-auto my-12"></div>
+            <p class="reveal uppercase tracking-[0.4em] font-bold text-sm">CEO, Stealth Venture Partner</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-32 px-8 lg:px-20">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="reveal font-serif text-6xl font-bold mb-10">Let's work.</h2>
+            <p class="reveal text-xl text-gray-600 mb-12 font-light">
+                I am currently accepting select projects for 2025. If you're ready to stop guessing and start growing, reach out.
+            </p>
+            <div class="reveal space-y-4">
+                <a href="mailto:tanvir@searchgrowth.io" class="block text-3xl md:text-5xl font-serif font-bold hover:text-accent-navy transition-colors underline underline-offset-8">tanvir@searchgrowth.io</a>
+                <div class="pt-10 flex justify-center gap-10 text-xs font-bold uppercase tracking-widest text-gray-400">
+                    <a href="https://www.linkedin.com" class="hover:text-charcoal">LinkedIn</a>
+                    <a href="https://twitter.com" class="hover:text-charcoal">Twitter</a>
+                    <a href="https://Threads.com" class="hover:text-charcoal">Threads</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-100 text-center text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">
+        &copy; <span id="year"></span> Tanvir Hossain / Search Strategy Specialist
+        <p>Built By <a href="https://www.facebook.com/profile.php?id=100063808086007"><u>OcaByte</u>.</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // Reveal Animation Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth immediate reveal for Hero items
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelectorAll('#hero .reveal').forEach(el => el.classList.add('active'));
+            }, 100);
+        });
+    </script>
+</body>
+</html>
